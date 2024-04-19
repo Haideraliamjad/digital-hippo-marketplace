@@ -3,10 +3,10 @@ import { ReactNode } from "react";
 
 const MaxWidthWrapper = ({
   className,
-  Children,
+  children,
 }: {
   className?: String;
-  Children: ReactNode;
+  children: ReactNode;
 }) => {
   return (
     <div
@@ -15,7 +15,7 @@ const MaxWidthWrapper = ({
         className
       )}
     >
-      {Children}
+      {children}
     </div>
   );
 };
